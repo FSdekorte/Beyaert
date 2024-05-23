@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/breadcrumb'
 
 
-const boomverzorging = () => {
+const Boomverzorging = () => {
   return (
     <html>
       <body>
@@ -38,4 +38,4 @@ const boomverzorging = () => {
   )
 }
 
-export default boomverzorging
+export default Boomverzorging

@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/breadcrumb'
 
 
-const groenaanleg = () => {
+const Groenaanleg = () => {
   return (
     <html>
       <body>
@@ -38,4 +38,4 @@ const groenaanleg = () => {
   )
 }
 
-export default groenaanleg
+export default Groenaanleg

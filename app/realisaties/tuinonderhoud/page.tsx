@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/breadcrumb'
 
 
-const tuinonderhoud = () => {
+const Tuinonderhoud = () => {
   return (
     <html>
       <body>
@@ -38,4 +38,4 @@ const tuinonderhoud = () => {
   )
 }
 
-export default tuinonderhoud
+export default Tuinonderhoud

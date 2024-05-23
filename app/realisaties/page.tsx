@@ -10,7 +10,7 @@ import {
 import Link from 'next/link'
 import React from 'react'
 
-const realisaties = () => {
+const Realisaties = () => {
   return (
     <html>
       <body>
@@ -28,14 +28,14 @@ const realisaties = () => {
           </Breadcrumb>
           <section className="h-screen w-screen flex items-center justify-center">
             <h1 className="text-5xl font-medium text-white">Realisaties</h1>
-            <Link href="/realisaties/groenaanleg" className='absolute mt-20 hover:text-green-500'>Groenaanleg</Link>
-            <Link href="/realisaties/tuinonderhoud" className='absolute mt-40 hover:text-green-500'>Tuinonderhoud</Link>
-            <Link href="/realisaties/boomverzorging" className='absolute mt-60 hover:text-green-500'>Boomverzorging</Link>
+            <BreadcrumbLink href="/realisaties/groenaanleg" className='absolute mt-20 hover:text-green-500'>Groenaanleg</BreadcrumbLink>
+            <BreadcrumbLink href="/realisaties/tuinonderhoud" className='absolute mt-40 hover:text-green-500'>Tuinonderhoud</BreadcrumbLink>
+            <BreadcrumbLink href="/realisaties/boomverzorging" className='absolute mt-60 hover:text-green-500'>Boomverzorging</BreadcrumbLink>
           </section>
       </body>
     </html>
   )
 }
 
-export default realisaties
+export default Realisaties
 
