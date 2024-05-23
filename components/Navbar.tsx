@@ -10,7 +10,9 @@ const pathname = usePathname()
  return (
    <nav className='text-[1.3em] font-bold text-white h-[80px] mb-[-120px]'>
      <ul className='m-0 p-[25px] overflow-hidden mr-[2.5vw] text-right'>
-        <Logo />
+        <Image
+        
+        />
          <BreadcrumbLink className="{`link ${pathname === '/' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green-500" href="/">
            Home
          </BreadcrumbLink>
