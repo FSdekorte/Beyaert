@@ -31,7 +31,7 @@ const Tuinonderhoud = () => {
           </BreadcrumbList>
         </Breadcrumb>
         <section className="h-screen w-screen flex items-center justify-center">
-          <h1 className="text-5xl font-medium text-white">Tuinonderhoud</h1>
+          <h1 className="text-5xl font-medium">Tuinonderhoud</h1>
         </section>
       </body>
     </html>

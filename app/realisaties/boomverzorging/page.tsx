@@ -31,7 +31,7 @@ const Boomverzorging = () => {
           </BreadcrumbList>
         </Breadcrumb>
         <section className="h-screen w-screen flex items-center justify-center">
-          <h1 className="text-5xl font-medium text-white">Boomverzorging</h1>
+          <h1 className="text-5xl font-medium">Boomverzorging</h1>
         </section>
       </body>
     </html>
