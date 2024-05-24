@@ -57,24 +57,6 @@ const BreadcrumbLink = React.forwardRef<
 })
 BreadcrumbLink.displayName = "BreadcrumbLink"
 
-const BreadcrumbLogin = React.forwardRef<
-  HTMLAnchorElement,
-  React.ComponentPropsWithoutRef<"a"> & {
-    asChild?: boolean
-  }
->(({ asChild, className, ...props }, ref) => {
-  const Comp = asChild ? Slot : "a"
-
-  return (
-    <Comp
-      ref={ref}
-      className={cn(" bg-green-500 rounded-md  text-white px-3 py-2", className)}
-      {...props}
-    />
-  )
-})
-BreadcrumbLogin.displayName = "BreadcrumbLogin"
-
 const BreadcrumbPage = React.forwardRef<
   HTMLSpanElement,
   React.ComponentPropsWithoutRef<"span">
@@ -84,7 +66,7 @@ const BreadcrumbPage = React.forwardRef<
     role="link"
     aria-disabled="true"
     aria-current="page"
-    className={cn("font-normal text-foreground text-green-500 hover:cursor-default", className)}
+    className={cn("font-normal text-foreground text-green hover:cursor-default", className)}
     {...props}
   />
 ))
@@ -98,7 +80,7 @@ const BreadcrumbSeparator = ({
   <li
     role="presentation"
     aria-hidden="true"
-    className={cn("[&>svg]:size-3.5", className)}
+    className={cn("[&>svg]:size-3.5 text-green", className)}
     {...props}
   >
     {children ?? <ChevronRight />}
@@ -127,7 +109,6 @@ export {
   BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbLogin,
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,

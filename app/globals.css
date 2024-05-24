@@ -4,19 +4,15 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 0, 0, 0;
+    --foreground-rgb: 84, 168, 138;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
-  }
-
-  BreadcrumbLink{
-    color: red;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 34, 197, 94;
+    --foreground-rgb: 84, 168, 138;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }  
@@ -45,6 +41,39 @@ body {
 *{
   -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+.text-green{
+  color: #54A88A;
+}
+
+.text-dark-green{
+  color: #4D7C0F;
+}
+
+.bg-green{
+  background-color: #54A88A;
+}
+
+.bg-dark-green{
+  background-color: #4D7C0F;
+}
+
+.ring-green{
+  --tw-ring-color: #54A88A;
+}
+
+.focus\:ring-green:focus {
+  --tw-ring-color: #54A88A;
+ }
+
+.hover\:text-green:hover{
+  color: #54A88A;
+}
+
+.hover\:text-dark-green:hover{	
+  color: #4D7C0F;
 }

@@ -20,7 +20,7 @@ const Groenaanleg = () => {
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbSeparator />
+            <BreadcrumbSeparator/>
             <BreadcrumbItem>
               <BreadcrumbLink href="/realisaties">Realisaties</BreadcrumbLink>
             </BreadcrumbItem>

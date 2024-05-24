@@ -14,8 +14,8 @@ const Realisaties = () => {
   return (
     <html>
       <body>
-          <Navbar />      
-          <Breadcrumb>
+          <Navbar /> 
+          <Breadcrumb  className='absolute ml-[2.5vw] mt-[120px]'>
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink href="/">Home</BreadcrumbLink>

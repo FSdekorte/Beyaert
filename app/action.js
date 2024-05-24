@@ -10,7 +10,7 @@ async function create(data) {
   cookies().set({
     name: 'name',
     value: 'lee',
-    httpOnly: true,
+    httpOnly: false,
     path: '/',
   })
 }
