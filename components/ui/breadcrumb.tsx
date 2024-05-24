@@ -57,6 +57,24 @@ const BreadcrumbLink = React.forwardRef<
 })
 BreadcrumbLink.displayName = "BreadcrumbLink"
 
+const BreadcrumbLogin = React.forwardRef<
+  HTMLAnchorElement,
+  React.ComponentPropsWithoutRef<"a"> & {
+    asChild?: boolean
+  }
+>(({ asChild, className, ...props }, ref) => {
+  const Comp = asChild ? Slot : "a"
+
+  return (
+    <Comp
+      ref={ref}
+      className={cn(" bg-green-500 rounded-md  text-white px-3 py-2", className)}
+      {...props}
+    />
+  )
+})
+BreadcrumbLogin.displayName = "BreadcrumbLogin"
+
 const BreadcrumbPage = React.forwardRef<
   HTMLSpanElement,
   React.ComponentPropsWithoutRef<"span">
@@ -109,6 +127,7 @@ export {
   BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
+  BreadcrumbLogin,
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,

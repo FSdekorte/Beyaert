@@ -8,7 +8,7 @@ export default function LoginPage() {
     <html>
       <body className='overflow-hidden'>
         <NavbarLogin />
-        <section className="h-screen w-screen items-center justify-center">
+        <section className="overflow-hidden h-screen w-screen items-center justify-center">
           <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 mt-[4em]">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
               <Image className="mx-auto" width={40} height={40} src={loginLogo} alt="Your Company" />

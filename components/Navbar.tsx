@@ -3,12 +3,10 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import Image from 'next/image'
 import logoNavbar from '../public/blad.svg'
-
-import { BreadcrumbLink } from './ui/breadcrumb'
+import { BreadcrumbLink, BreadcrumbLogin } from './ui/breadcrumb'
 
 const Navbar = () => {
 const pathname = usePathname()
-
  
  return (
    <nav className='text-[1.3em] font-bold text-white h-[80px] mb-[-120px]'>
@@ -45,12 +43,12 @@ const pathname = usePathname()
            Contact
          </BreadcrumbLink>
 
-         <BreadcrumbLink
+         <BreadcrumbLogin
            className="{`link ${pathname === '/login' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green-500"
            href="/login"
          >
            Login
-         </BreadcrumbLink>
+         </BreadcrumbLogin>
      </ul>
    </nav>
  )
