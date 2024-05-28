@@ -8,6 +8,7 @@ import {
   BreadcrumbPage, 
   BreadcrumbSeparator 
 } from '@/components/ui/breadcrumb'
+import Link from 'next/link'
 
 
 const Groenaanleg = () => {
@@ -27,13 +28,14 @@ const Groenaanleg = () => {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage>Groenaanleg</BreadcrumbPage>
-
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
         <section className="h-screen w-screen flex items-center justify-center">
-          <h1 className="text-5xl font-medium">Groenaanleg</h1>
-        </section>
+            <h1 className="text-5xl font-medium">Groenaanleg</h1>
+            <Link href="/realisaties/groenaanleg/knokke" className='absolute mt-20 hover:text-green-500'>Knokke</Link>
+            <Link href="/realisaties/groenaanleg/sint-martens-latem" className='absolute mt-40 hover:text-green-500'>Sint-Martens-Latem</Link>
+          </section>
       </body>
     </html>
   )

@@ -1,35 +1,12 @@
+@import url("https://use.typekit.net/lew0nfv.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 84, 168, 138;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 84, 168, 138;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }  
-
-  h1{ 
-    color:white;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+:root {
+  --foreground-rgb: 84, 168, 138;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @layer utilities {
@@ -77,3 +54,27 @@ body {
 .hover\:text-dark-green:hover{	
   color: #4D7C0F;
 }
+
+.font-freight{
+font-family: "freight-big-pro", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.font-freight-italic{
+  font-family: "freight-big-pro", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* .image-project-left {
+  object-fit: cover;
+  width: 90vw;
+  border-radius: 1.5em;
+  transition: all 0.5s ease-in-out;
+ }
+
+ .image-project-left:hover {
+  margin-top: -15px;
+  margin-bottom: 15px;
+ } */

@@ -8,10 +8,9 @@ import {
   BreadcrumbPage, 
   BreadcrumbSeparator 
 } from '@/components/ui/breadcrumb'
-import Link from 'next/link'
 
 
-const Tuinonderhoud = () => {
+const Middelkerke = () => {
   return (
     <html>
       <body>
@@ -25,19 +24,22 @@ const Tuinonderhoud = () => {
             <BreadcrumbItem>
               <BreadcrumbLink href="/realisaties">Realisaties</BreadcrumbLink>
             </BreadcrumbItem>
+            <BreadcrumbSeparator/>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/realisaties/tuinonderhoud">Tuinonderhoud</BreadcrumbLink>
+            </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Tuinonderhoud</BreadcrumbPage>
+              <BreadcrumbPage>Middelkerke</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
-      </Breadcrumb>
-      <section className="h-screen w-screen flex items-center justify-center">
-            <h1 className="text-5xl font-medium">Tuinonderhoud</h1>
-            <Link href="/realisaties/tuinonderhoud/middelkerke" className='absolute mt-20 hover:text-green-500'>Middelkerke</Link>
-      </section>
+        </Breadcrumb>
+        <section className="h-screen w-screen flex items-center justify-center">
+          <h1 className="text-5xl font-medium">Middelkerke</h1>
+        </section>
       </body>
     </html>
   )
 }
 
-export default Tuinonderhoud
+export default Middelkerke

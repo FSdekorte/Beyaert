@@ -1,15 +1,13 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-import Image from 'next/image'
-import logoNavbar from '../public/blad.svg'
 import { BreadcrumbLink,} from './ui/breadcrumb'
 
 const Navbar = () => {
 const pathname = usePathname()
  
  return (
-   <nav className='text-[1.3em] font-bold text-white h-[80px]'>
+   <nav className='text-[1.3em] font-bold text-white mb-[-80px] h-[80px]'>
      <ul className='m-0 p-[25px] overflow-hidden mr-[2.5vw] text-right'>
          <BreadcrumbLink className="{`link ${pathname === '/' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green" href="/">
            Home
@@ -35,14 +33,6 @@ const pathname = usePathname()
          >
            Contact
          </BreadcrumbLink>
-
-         <Image
-          width={30}
-          height={30}
-          src={logoNavbar}
-          className='inline ml-[1.2em] hover:cursor-default'
-          alt="logo van Beyaert Groenaanleg & Tuinonderhoud"
-         />
      </ul>
    </nav>
  )
