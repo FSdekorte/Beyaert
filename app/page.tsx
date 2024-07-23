@@ -5,8 +5,12 @@ import project1 from '../public/project-1.jpg'
 import project2 from '../public/project-2.jpeg'
 import profielFoto from '../public/profielfoto.jpg'
 import logoHome from '../public/logo-transparent.png'
+<<<<<<< Updated upstream
 import Testfoto from '../public/project-3.jpg'
 import Link from "next/link";
+=======
+
+>>>>>>> Stashed changes
 
 export default function Home() {
 
@@ -14,7 +18,11 @@ export default function Home() {
     <html>
       <body>    
       <Navbar/> 
+<<<<<<< Updated upstream
       <section className="h-screen flex w-screen pt-[80px] ">
+=======
+      <section className="h-screen flex w-screen mt-[-80px] pt-[80px] ">
+>>>>>>> Stashed changes
         <div className="w-1/2 h-screen flex items-center justify-center mt-[-40px]">
           <Image
             objectFit="cover"
@@ -23,24 +31,42 @@ export default function Home() {
             alt="Profielfoto van Reindert Beyaert"
           />
         </div>
+<<<<<<< Updated upstream
         <div className="w-1/2 h-screen flex items-center justify-center mt-[-40px] -ml-45">
           <Image
             src={logoHome}
             className='align-middle'
             alt="Logo van Beyaert Groenaanleg & Tuinonderhoud"
+=======
+        <div className="w-1/2 h-screen flex items-center justify-center mt-[-40px] -ml-35">
+          <Image
+            objectFit="cover"
+            src={logoHome}
+            className='align-middle'
+            alt="Profielfoto van Reindert Beyaert"
+>>>>>>> Stashed changes
           />
         </div>
       </section>
       <section className="h-screen w-screen">
+<<<<<<< Updated upstream
         <div className="w-screen relative h-auto text-center">
           <h1 className="font-freight text-[3.5em] -ml-20">
           Creating
           </h1>
           <h3 className="font-freight-italic text-[2.7em] ml-20 text-green">
+=======
+        <div className="w-screen relative h-auto align-center bg-red-700">
+          <h1 className="font-freight text-[3.5em]">
+          Creating
+          </h1>
+          <h3 className="font-freight-italic text-[2.7em]">
+>>>>>>> Stashed changes
             outdoor spaces
           </h3>
         </div>
         <div className="flex">
+<<<<<<< Updated upstream
           <div className="w-1/2 h-screen">
           <Link href="/realisaties/groenaanleg/knokke">
             <div className="w-[44vw] ml-[4vw] mr-[2vw]   mt-[14vh]">
@@ -68,10 +94,19 @@ export default function Home() {
             </div>
           </Link>
           </div>
+=======
+        <div className="w-1/2 h-screen bg-blue-700">
+          <h1>Test</h1>
+        </div>
+        <div className="w-1/2 h-screen bg-green-700">
+          <h1>Test</h1>
+        </div>
+>>>>>>> Stashed changes
         </div>
       </section>
 
       
+<<<<<<< Updated upstream
       <section className="h-screen relative flex w-screen">
       {/* <video width="320" height="240" controls preload="none">
       <source src="@/" type="video/mp4" />
@@ -113,6 +148,14 @@ export default function Home() {
           Met zijn passie, talent en toewijding heeft hij niet alleen prachtige tuinen gecreëerd, maar ook een blijvende impact gehad op zijn gemeenschap.
           </p>
         </div>
+=======
+      <section className="h-screen flex w-screen">
+        <div className="w-1/2 h-screen bg-yellow-700">
+
+        </div>
+        
+        <div className="w-1/2 h-screen bg-purple-700"></div>
+>>>>>>> Stashed changes
       </section>
     </body>
     </html>
