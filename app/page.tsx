@@ -5,7 +5,7 @@ export default function Home() {
   return (      
     <main>
       <p>
-        Home
+        Homee
       </p>
     </main>
   );
