@@ -1,41 +1,36 @@
-'use client'
-import { usePathname } from 'next/navigation'
-import React from 'react'
-import { BreadcrumbLink,} from './ui/breadcrumb'
+"use client"
 
-const Navbar = () => {
-const pathname = usePathname()
- 
- return (
-   <nav className='text-[1.3em] font-bold text-white mb-[-80px] h-[80px]'>
-     <ul className='m-0 p-[25px] overflow-hidden mr-[2.5vw] text-right'>
-         <BreadcrumbLink className="{`link ${pathname === '/' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green" href="/">
-           Home
-         </BreadcrumbLink>
+import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import IconSvg from './logoIcoon';
 
-         <BreadcrumbLink
-           className="{`link ${pathname === '/realisaties' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green"
-           href="/realisaties"
-         >
-           Realisaties
-         </BreadcrumbLink>
-              
-         <BreadcrumbLink
-           className="{`link ${pathname === '/diensten' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green"
-           href="/diensten"
-         >
-           Diensten
-         </BreadcrumbLink>
-              
-         <BreadcrumbLink
-           className="{`link ${pathname === '/contact' ? 'active' : ''}`} ml-[1.2em] inline hover:text-green"
-           href="/contact"
-         >
-           Contact
-         </BreadcrumbLink>
-     </ul>
-   </nav>
- )
-}
+export default function Navbar () {
 
-export default Navbar
+const currentPath = usePathname();  
+
+  return (
+    <nav className="flex justify-center py-4 space-x-4">
+      <Link href="/" className="bg-gray-200 p-4 rounded-full hover:bg-gray-300 transition-all duration-500 ease-in-out">
+        <IconSvg className="w-6 h-6" />
+      </Link>
+      <div className="flex items-center space-x-8 bg-gray-200 px-6 py-2 rounded-full shadow-md">
+          <Link href="/" >
+            <p className={currentPath === "/" ? "text-black" : "text-gray-300 hover:text-black transition-all duration-500 ease-in-out"}>Home</p>
+          </Link>
+
+          <Link href="/realisaties" >
+            <p className={currentPath === "/realisaties" ? "text-black" : "text-gray-300 hover:text-black transition-all duration-500 ease-in-out"}>Realisaties</p>
+          </Link>
+
+          <Link href="/diensten" >
+            <p className={currentPath === "/diensten" ? "text-black" : "text-gray-300 hover:text-black transition-all duration-500 ease-in-out"}>Diensten</p>
+          </Link>
+
+          <Link href="/contact" >
+            <p className={currentPath === "/contact" ? "text-black" : "text-gray-300 hover:text-black transition-all duration-500 ease-in-out"}>Contact</p>
+          </Link>
+      </div>
+    </nav>
+  );
+};

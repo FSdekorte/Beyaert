@@ -7,6 +7,7 @@
   --foreground-rgb: 84, 168, 138;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: #54a88a;
 }
 
 @layer utilities {
@@ -65,20 +66,4 @@ font-style: normal;
   font-family: "freight-big-pro", serif;
   font-weight: 400;
   font-style: italic;
-<<<<<<< Updated upstream
 }
-
-/* .image-project-left {
-  object-fit: cover;
-  width: 90vw;
-  border-radius: 1.5em;
-  transition: all 0.5s ease-in-out;
- }
-
- .image-project-left:hover {
-  margin-top: -15px;
-  margin-bottom: 15px;
- } */
-=======
-}
->>>>>>> Stashed changes

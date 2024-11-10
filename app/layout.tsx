@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
+import Layout from "@/components/Layout";
 
 export const metadata: Metadata = {
   title: "Beyaert Groenaanleg & Tuinonderhoud",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={GeistSans.className}>
-        {children}
+          <Layout>
+            {children}
+          </Layout>
       </body>
     </html>
   );
