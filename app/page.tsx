@@ -1,5 +1,6 @@
 "use client"
 
+import Marquee from "@/components/Marquee";
 import Image from "next/image";
 
 const items = [
@@ -52,6 +53,8 @@ export default function Home() {
       </div>
     </div>
       </section>
+      <Marquee text="Welcome to Piet François' portfolio - Grimeur & Character Specialist" />
+
     </main>
   );
 }
