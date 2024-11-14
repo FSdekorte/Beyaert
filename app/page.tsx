@@ -1,6 +1,14 @@
+"use client"
+
 import Image from "next/image";
-import React from "react";
-import IconSvg from '@/components/logoIcoon';
+
+const items = [
+  { color: "bg-gray-800", rotate: "-rotate-30", zIndex: "z-10" },
+  { color: "bg-gray-600", rotate: "-rotate-15", zIndex: "z-20" },
+  { color: "bg-gray-400", rotate: "rotate-0", zIndex: "z-30" },
+  { color: "bg-gray-600", rotate: "rotate-15", zIndex: "z-20" },
+  { color: "bg-gray-800", rotate: "rotate-30", zIndex: "z-10" },
+];
 
 export default function Home() {
 
@@ -28,6 +36,21 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+      <div className="flex justify-center items-center h-screen">
+      <div className="relative flex">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`w-32 h-48 ${item.color} rounded-lg absolute ${item.rotate} ${item.zIndex}`}
+            style={{
+              left: `${index * 20}px`,
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
       </section>
     </main>
   );
